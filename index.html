@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Surprise</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<h1>🎉 Birthday Surprise 🎉</h1>
+
+<button onclick="openAdmin()">Admin Panel</button>
+<button onclick="playSurprise()">Play Surprise</button>
+
+<div id="admin" class="hidden">
+  <h2>Admin Panel</h2>
+  <input type="password" id="password" placeholder="Password">
+  <input type="file" id="videoInput" accept="video/*">
+  <button onclick="saveVideo()">Upload Video</button>
+</div>
+
+<video id="videoPlayer" controls class="hidden"></video>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
